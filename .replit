@@ -1,0 +1,11 @@
+run = "java -jar Lavalink.jar"
+
+[nix]
+channel = "stable-23_11"
+
+[deployment]
+run = ["sh", "-c", "java -jar Lavalink.jar"]
+
+[[ports]]
+localPort = 24545
+externalPort = 80
